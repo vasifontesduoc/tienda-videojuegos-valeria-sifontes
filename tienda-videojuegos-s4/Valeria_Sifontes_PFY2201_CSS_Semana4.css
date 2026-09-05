@@ -1,5 +1,5 @@
 /* ==============================
-   VARIABLES DE MARCA
+VARIABLES DE MARCA
    ============================== */
 :root {
     --rojo-tienda: #d32f2f;
@@ -10,14 +10,14 @@ body {
 }
 
 /* ==============================
-   NAVBAR
+NAVBAR
    ============================== */
 .navbar-tienda {
     background-color: var(--rojo-tienda);
 }
 
 /* ==============================
-   BOTONES DE MARCA (cards)
+BOTONES DE MARCA (cards)
    ============================== */
 .btn-tienda {
     background-color: var(--rojo-tienda);
@@ -32,7 +32,7 @@ body {
 }
 
 /* ==============================
-   CARRUSEL
+CARRUSEL
    ============================== */
 .carousel-item img {
     height: 60vh;
@@ -58,7 +58,7 @@ body {
 }
 
 /* ==============================
-   CARDS DE PRODUCTOS
+CARDS DE PRODUCTOS
    ============================== */
 .card-img-top {
     height: 260px;
@@ -68,7 +68,7 @@ body {
 }
 
 /* ==============================
-   SECCIÓN DE BENEFICIOS (grid)
+SECCIÓN DE BENEFICIOS (grid)
    ============================== */
 .icono-feature {
     font-size: 2.2rem;
@@ -76,7 +76,7 @@ body {
 }
 
 /* ==============================
-   FOOTER
+FOOTER
    ============================== */
 footer a {
     color: #fff;
