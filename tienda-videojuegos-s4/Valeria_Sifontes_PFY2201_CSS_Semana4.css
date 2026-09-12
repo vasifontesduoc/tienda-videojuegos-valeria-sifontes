@@ -81,3 +81,39 @@ FOOTER
 footer a {
     color: #fff;
 }
+
+/* ==============================
+INTERACTIVIDAD CON JAVASCRIPT (Semana 5)
+   ============================== */
+
+/* Se aplica con JS al hacer mouseover sobre una card de producto */
+.card-resaltada {
+    transform: translateY(-4px);
+    box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.15) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Etiqueta "Popular" creada dinámicamente con JS en mouseover */
+.badge-popular {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--rojo-tienda);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+
+/* La card necesita position: relative para ubicar el badge */
+#productos .card {
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Párrafo de detalle creado dinámicamente al hacer clic en "Ver detalle" */
+.detalle-extra {
+    border-top: 1px solid #eee;
+    padding-top: 6px;
+}
