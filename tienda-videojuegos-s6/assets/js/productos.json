@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "nombre": "Mario Kart World",
+        "precio": 49990,
+        "categoria": "nintendo",
+        "imagen": "assets/img/mariokart.jpeg",
+        "descripcion": "Carreras junto a Mario y sus amigos en un mundo lleno de circuitos."
+    },
+    {
+        "id": 2,
+        "nombre": "Mortal Kombat: Legacy Kollection",
+        "precio": 54990,
+        "categoria": "playstation",
+        "imagen": "assets/img/mortalkombat.jpeg",
+        "descripcion": "La colección con los clásicos combates que dieron inicio a la saga."
+    },
+    {
+        "id": 3,
+        "nombre": "Astro Bot",
+        "precio": 39990,
+        "categoria": "playstation",
+        "imagen": "assets/img/astrobot.jpeg",
+        "descripcion": "Acompaña a Astro en una divertida aventura llena de plataformas."
+    },
+    {
+        "id": 4,
+        "nombre": "Minecraft",
+        "precio": 29990,
+        "categoria": "multiplataforma",
+        "imagen": "assets/img/minecraft.jpeg",
+        "descripcion": "Construye, explora y sobrevive en un mundo abierto."
+    },
+    {
+        "id": 5,
+        "nombre": "The Legend of Zelda",
+        "precio": 44990,
+        "categoria": "nintendo",
+        "imagen": "assets/img/zelda.jpeg",
+        "descripcion": "Acompaña a Link en una aventura llena de exploración y misterios."
+    },
+    {
+        "id": 6,
+        "nombre": "EA Sports FC 26",
+        "precio": 59990,
+        "categoria": "playstation",
+        "imagen": "assets/img/PS4-Part-2_png.jpg",
+        "descripcion": "Disfruta de emocionantes partidos de fútbol."
+    }
+]

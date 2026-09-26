@@ -1,0 +1,99 @@
+/* ==============================
+VARIABLES DE MARCA
+   ============================== */
+:root {
+    --rojo-tienda: #d32f2f;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ==============================
+NAVBAR
+   ============================== */
+.navbar-tienda {
+    background-color: var(--rojo-tienda);
+}
+
+.categoria-link.activa {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* ==============================
+BOTONES DE MARCA
+   ============================== */
+.btn-tienda {
+    background-color: var(--rojo-tienda);
+    border-color: var(--rojo-tienda);
+    color: #fff;
+}
+
+.btn-tienda:hover {
+    background-color: #a01f1f;
+    border-color: #a01f1f;
+    color: #fff;
+}
+
+/* ==============================
+CARRUSEL
+   ============================== */
+.carousel-item img {
+    height: 60vh;
+    max-height: 480px;
+    min-height: 280px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-caption {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: left;
+    padding: 40px 60px 30px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 0;
+}
+
+.carousel-indicators {
+    margin-bottom: 4px;
+}
+
+/* ==============================
+CARDS DE PRODUCTOS
+   ============================== */
+.card-img-top {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* ==============================
+SECCIÓN DE BENEFICIOS
+   ============================== */
+.icono-feature {
+    font-size: 2.2rem;
+    color: var(--rojo-tienda);
+}
+
+/* ==============================
+CARRITO (dentro del modal)
+   ============================== */
+#listaCarrito li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 6px 0;
+    font-size: 0.9rem;
+}
+
+/* ==============================
+FOOTER
+   ============================== */
+footer a {
+    color: #fff;
+}
