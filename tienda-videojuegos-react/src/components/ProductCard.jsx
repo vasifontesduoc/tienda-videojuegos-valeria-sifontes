@@ -1,10 +1,12 @@
-// Componente que muestra la información de un solo producto.
-// Recibe el producto y una función (onAgregar) que avisa a App
-// cuando el usuario quiere agregarlo al carrito.
-function ProductCard({ producto, onAgregar }) {
-    // Renderizado condicional: si el producto tiene precio de oferta,
-    // se muestran ambos precios; si no, solo el precio normal.
+import { useState } from "react";
+
+// Muestra la información de un producto individual.
+function ProductCard({ producto, enCarrito, onAlternar }) {
     const tieneOferta = producto.precioOferta !== null;
+
+    // Estado local, propio de esta tarjeta: controla si se muestra el
+    // detalle extra (la categoría) o no. Es independiente del carrito.
+    const [mostrarDetalle, setMostrarDetalle] = useState(false);
 
     return (
         <div className="col">
@@ -18,9 +20,24 @@ function ProductCard({ producto, onAgregar }) {
                     <h5 className="card-title">{producto.nombre}</h5>
                     <p className="card-text">{producto.descripcion}</p>
 
+                    {/* Renderizado condicional: solo aparece si mostrarDetalle es true */}
+                    {mostrarDetalle && (
+                        <p className="text-muted small mb-2">
+                            Categoría: {producto.categoria}
+                        </p>
+                    )}
+
+                    {/* Botón "Ver más" / "Ver menos": cambia su propio texto al
+              hacer clic, usando el estado local mostrarDetalle. */}
+                    <button
+                        className="btn btn-link btn-sm p-0 mb-2 text-start"
+                        onClick={() => setMostrarDetalle(!mostrarDetalle)}
+                    >
+                        {mostrarDetalle ? "Ver menos" : "Ver más"}
+                    </button>
+
                     <div className="mt-auto">
                         {tieneOferta ? (
-                            // Caso con oferta: precio normal tachado + precio oferta destacado
                             <p className="mb-2">
                                 <span className="text-decoration-line-through text-muted me-2">
                                     ${producto.precioNormal.toLocaleString("es-CL")}
@@ -30,18 +47,22 @@ function ProductCard({ producto, onAgregar }) {
                                 </span>
                             </p>
                         ) : (
-                            // Caso sin oferta: solo se muestra el precio normal
                             <p className="mb-2 fw-bold">
                                 ${producto.precioNormal.toLocaleString("es-CL")}
                             </p>
                         )}
 
-                        {/* Evento onClick: al hacer clic, se llama a onAgregar con este producto */}
+                        {/* Renderizado condicional: el texto y el color del botón
+                cambian según si el producto ya está en el carrito. */}
                         <button
-                            className="btn btn-primary w-100"
-                            onClick={() => onAgregar(producto)}
+                            className={
+                                enCarrito
+                                    ? "btn btn-success w-100"
+                                    : "btn btn-primary w-100"
+                            }
+                            onClick={() => onAlternar(producto)}
                         >
-                            Agregar al carrito
+                            {enCarrito ? "En el carrito ✓" : "Agregar al carrito"}
                         </button>
                     </div>
                 </div>
