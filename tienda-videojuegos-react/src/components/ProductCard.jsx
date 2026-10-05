@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // Muestra la información de un producto individual.
-function ProductCard({ producto, enCarrito, onAlternar }) {
+function ProductCard({ producto, enCarrito, onAlternar, onEliminar }) {
     const tieneOferta = producto.precioOferta !== null;
 
     // Estado local, propio de esta tarjeta: controla si se muestra el
@@ -63,6 +63,14 @@ function ProductCard({ producto, enCarrito, onAlternar }) {
                             onClick={() => onAlternar(producto)}
                         >
                             {enCarrito ? "En el carrito ✓" : "Agregar al carrito"}
+                        </button>
+
+                        {/* Elimina el videojuego del catálogo (lo maneja App con el estado) */}
+                        <button
+                            className="btn btn-outline-danger btn-sm w-100 mt-2"
+                            onClick={() => onEliminar(producto.id)}
+                        >
+                            Eliminar del catálogo
                         </button>
                     </div>
                 </div>
