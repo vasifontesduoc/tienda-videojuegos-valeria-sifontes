@@ -267,3 +267,17 @@ form.card:hover {
   justify-content: space-between;
   gap: 0.5rem;
 }
+
+/* En celulares el nombre de la tienda se achica para que no se salga de la pantalla */
+@media (max-width: 576px) {
+  .navbar .navbar-brand {
+    font-size: 0.65rem;
+  }
+}
+
+/* El header (que contiene el navbar) queda fijo arriba al hacer scroll */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
