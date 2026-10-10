@@ -4,10 +4,6 @@ Repositorio del proyecto semestral de **Desarrollo Frontend I (PFY2201)**, Duoc 
 
 Contiene la tienda de videojuegos online que se desarrolló semana a semana durante el curso, hasta la **Evaluación Final Transversal (EFT)**.
 
-- **Sitio publicado (EFT):** https://vasifontesduoc.github.io/tienda-videojuegos-valeria-sifontes/tienda-videojuegos-react/
-- **Autora:** Valeria Sifontes
-- **Docente:** Alonso Castillo
-
 ## Contenido del repositorio
 
 | Carpeta | Descripción |
